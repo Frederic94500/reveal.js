@@ -234,8 +234,8 @@ body {
  *********************************************/
 .reveal section img {
   margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #fff;
+  /*background: rgba(255, 255, 255, 0.12);*/
+  /*border: 4px solid #fff;*/
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
@@ -276,3 +276,38 @@ body {
 @media print {
   .backgrounds {
     background-color: #222; } }
+
+
+/**********************************
+    Début Titre
+***********************************/
+
+body {
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Ubuntu', 'Bowlby One SC', cursive;
+    /*font-size: 10vw;
+    width: 100vw;
+    margin-top: calc(50vh - 10vw);
+    text-align: center;*/
+    background: linear-gradient( 60deg, hsl(0, 75%, 50%) 10%, hsl(20, 75%, 50%) 10%, hsl(20, 75%, 50%) 25%, hsl(50, 75%, 50%) 25%, hsl(50, 75%, 50%) 40%, hsl(130, 75%, 50%) 40%, hsl(130, 75%, 50%) 55%, hsl(200, 75%, 50%) 55%, hsl(200, 75%, 50%) 70%, hsl(260, 75%, 50%) 70%, hsl(260, 75%, 50%) 85%, hsl(0, 75%, 50%) 85% );
+    text-shadow: 0.5px -0.6vw #fff;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 10s BeProud linear infinite, 3s Always ease alternate infinite;
+}
+
+@keyframes BeProud {
+    100% {
+        background-position: 100vw 0px;
+    }
+}
+
+@keyframes Always {
+    100% {
+        transform: scale(1.1);
+    }
+}
